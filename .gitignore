@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Xcode / Playground kullanıcı verileri
+xcuserdata/
+*.xcuserstate
+*.xcuserdatad/
+build/
+DerivedData/
+*.moved-aside
+timeline.xctimeline
+playground.xcworkspace/xcuserdata/
