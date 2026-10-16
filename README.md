@@ -1,10 +1,10 @@
 # SWIFTUI BOOTCAMP
 
-iOS bootcamp sürecinde işlediğim Swift konularının tutulduğu playground arşivi. Her `.playground` dosyası tek bir konuyu baştan sona, çalıştırılabilir örnekler ve satır içi Türkçe notlarla ele alıyor. Temel değişken tanımlarından başlayıp OOP, protocol/extension ve hata yönetimine kadar ilerleyen bir sırayla düzenlendi.
+iOS bootcamp sürecinde işlediğim Swift konularının playground arşivi ve kurs boyunca geliştirdiğim SwiftUI Xcode projeleri (`Projects/` klasörü). Her `.playground` dosyası tek bir konuyu baştan sona, çalıştırılabilir örnekler ve satır içi Türkçe notlarla ele alıyor. Temel değişken tanımlarından başlayıp OOP, protocol/extension ve hata yönetimine kadar ilerleyen bir sırayla düzenlendi.
 
 - **Dil / sürüm:** Swift 6
 - **Hedef platform:** iOS
-- **Ortam:** Xcode Playground (`executeOnSourceChanges` açık)
+- **Ortam:** Xcode Playground (`executeOnSourceChanges` açık) ve SwiftUI Xcode projeleri
 
 ## Önerilen çalışma sırası
 
@@ -85,12 +85,37 @@ Farklı veri tipleriyle (String, Int) 13 değişken tanımlama ve string interpo
 | 6 | `maasHesapla(günSayisi:)` | 150 saate kadar 40₺, aşan mesai saatleri 80₺ |
 | 7 | `otoparkUcretiHesapla(otoparkSüresi:)` | İlk saat 50₺, sonraki her saat +10₺ |
 
+## Xcode projeleri (`Projects/`)
+
+Kurs sürecinde yazdığım SwiftUI projeleri. Hepsi kendi `.xcodeproj` dosyasıyla gelir; Xcode'da açıp çalıştırılabilir. Kodların içinde satır içi Türkçe açıklamalar bulunur.
+
+| Proje | Konu |
+|---|---|
+| [`LifeCycleSWIFT`](Projects/LifeCycleSWIFT) | Yaşam döngüsü, sayfa geçişleri, TabBar |
+| [`WidgetsUsing`](Projects/WidgetsUsing) | Temel SwiftUI bileşenleri (widget'lar) |
+| [`DesignWorks`](Projects/DesignWorks) | Tasarım çalışması: özel renk/font, çoklu dil, `Chip` bileşeni |
+| [`odev3`](Projects/odev3) | Ödev 3 — avokado ürün sayfası tasarımı |
+
+### LifeCycleSWIFT — Yaşam Döngüsü, Geçişler ve TabBar
+- **`TabSayfa`:** Ekranın altındaki sekme çubuğu (**TabBar**) `TabView` + `tabItem { Label }` ile kurulur. Renkleri `UITabBarAppearance` ile özelleştirilir. Uygulamanın 2-5 ana bölümü varsa (ana sayfa, ayarlar, profil) kullanılır.
+- **`Anasayfa`:** `init` / `onAppear` / `onDisappear` yaşam döngüsü sırası, `NavigationStack`, `toolbar` ve `navigationDestination(isPresented:)` ile kod üzerinden geçiş. `Kisiler` nesnesi hedef sayfaya parametre olarak taşınır.
+- **`OyunEkrani` / `SonucEkrani`:** Gelen veriyi gösterme, `sheet` ile alttan pencere açma, `dismiss` ile kapatma.
+- **`Gecisler/`:** Geçiş türleri ayrı ayrı: düz geçiş (`NavigationLink`), şartlı geçiş (sayaç, şifre), `sheet`, `fullScreenCover` ve veri taşıyarak geçiş. `GecisMenu` hepsini tek yerden denemeyi sağlar.
+- Hangi sayfanın açılışta görüneceği `LifeCycleSWIFTApp.swift` içindeki `WindowGroup`'ta seçilir.
+
+### WidgetsUsing — Temel SwiftUI Bileşenleri
+`TextField`, `Button`, `Image`, `Toggle`, `Picker` (segmented ve açılır liste), `Stepper`, `Slider`, `DatePicker` ve `onTapGesture`. Hepsi `@State` değişkenine `$` ile bağlanır; `DateFormatter` ile saat/tarih biçimlendirme de yapılır.
+
+### DesignWorks ve odev3 — Tasarım Çalışmaları
+Assets'te özel renk, `Fonts/` altında özel font (`Info.plist` > `UIAppFonts`), `Localizable.strings` ile TR/EN çoklu dil, `GeometryReader` ile ekrana oranlı boyutlar ve yeniden kullanılabilir `Chip` bileşeni. `UINavigationBarAppearance` ile navigation bar rengi/fontu ayarlanır.
+
 ## Kullanım
 
 ```bash
-git clone https://github.com/isaanilkoca/SWIFTUI-BOOTCAMP.git
-cd SWIFTUI-BOOTCAMP
-open Variables.playground
+git clone https://github.com/isaanilkoca/SWIFT-BOOTCAMP1.git
+cd SWIFT-BOOTCAMP1
+open Variables.playground                          # playground
+open Projects/LifeCycleSWIFT/LifeCycleSWIFT.xcodeproj   # Xcode projesi
 ```
 
 Xcode'da playground açıldıktan sonra sol alttaki **Play** butonuyla çalıştırıp çıktıları konsol panelinden takip edebilirsiniz. Bazı dosyalarda alternatif anlatımlar bilinçli olarak yorum satırına alınmıştır; ilgili bloğun yorumunu kaldırıp tekrar çalıştırarak davranış farkını görebilirsiniz.

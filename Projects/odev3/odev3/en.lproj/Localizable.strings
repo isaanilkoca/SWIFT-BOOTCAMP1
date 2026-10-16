@@ -1,0 +1,15 @@
+/*
+  Localizable.strings (English)
+  odev3
+*/
+
+"avokadoBaslik" = "Fresh Avocado";
+"organikYazi" = "Organic";
+"tazeYazi" = "Fresh";
+"yerliYazi" = "Local";
+"veganYazi" = "Vegan";
+"teslimatSure" = "2 days";
+"teslimatBaslik" = "Delivery";
+"avokadoAciklama" = "Avocado lover, this one is exactly for you !";
+"fiyat" = "$ 2.50";
+"buttonYazi" = "ADD TO CART";
