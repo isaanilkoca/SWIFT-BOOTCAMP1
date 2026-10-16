@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// BU DOSYA: Pizza ürün sayfası. Nerede kullanılır? Yemek/ürün detay sayfası, mağaza ürün kartı gibi "resim + başlık + açıklama + fiyat + buton" ekranlarında.
+// Mantık: renk/yazı/dil Assets ve Localizable.strings'ten gelir, boyutlar GeometryReader ile ekrana oranlanır.
 struct ContentView: View { // SAYFA BURASI
     
     init() { // initiliaze function sayfa acıldıgında calısacak fonklar

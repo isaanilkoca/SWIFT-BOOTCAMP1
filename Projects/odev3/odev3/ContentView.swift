@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// BU DOSYA: Avokado ürün sayfası (DesignWorks'ün aynı tasarımı, farklı ürün). Nerede kullanılır? Ürün detay / menü / kampanya sayfaları.
+// Fark: Chip artık LocalizedStringKey aldığı için etiketler de TR/EN çevrilir.
 struct ContentView: View { // SAYFA BURASI
 
     init() { // sayfa açıldığında, çizilmeden önce çalışır
