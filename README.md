@@ -91,10 +91,10 @@ Kurs sürecinde yazdığım SwiftUI projeleri. Hepsi kendi `.xcodeproj` dosyası
 
 | Proje | Konu |
 |---|---|
-| [`LifeCycleSWIFT`](Projects/LifeCycleSWIFT) | Yaşam döngüsü, sayfa geçişleri, TabBar |
-| [`WidgetsUsing`](Projects/WidgetsUsing) | Temel SwiftUI bileşenleri (widget'lar) |
-| [`DesignWorks`](Projects/DesignWorks) | Tasarım çalışması: özel renk/font, çoklu dil, `Chip` bileşeni |
-| [`odev3`](Projects/odev3) | Ödev 3 — avokado ürün sayfası tasarımı |
+| [`LifeCycleSWIFT`](Projects/LifeCycleSWIFT) ([anlatım](Projects/LifeCycleSWIFT/README.md)) | Yaşam döngüsü, sayfa geçişleri, TabBar |
+| [`WidgetsUsing`](Projects/WidgetsUsing) ([anlatım](Projects/WidgetsUsing/README.md)) | Temel SwiftUI bileşenleri (widget'lar) |
+| [`DesignWorks`](Projects/DesignWorks) ([anlatım](Projects/DesignWorks/README.md)) | Tasarım çalışması: özel renk/font, çoklu dil, `Chip` bileşeni |
+| [`odev3`](Projects/odev3) ([anlatım](Projects/odev3/README.md)) | Ödev 3 — avokado ürün sayfası tasarımı |
 
 ### LifeCycleSWIFT — Yaşam Döngüsü, Geçişler ve TabBar
 - **`TabSayfa`:** Ekranın altındaki sekme çubuğu (**TabBar**) `TabView` + `tabItem { Label }` ile kurulur. Renkleri `UITabBarAppearance` ile özelleştirilir. Uygulamanın 2-5 ana bölümü varsa (ana sayfa, ayarlar, profil) kullanılır.
