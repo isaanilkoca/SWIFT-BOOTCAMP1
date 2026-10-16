@@ -2,6 +2,7 @@ import SwiftUI
 
 // 5) FULLSCREEN COVER: sheet gibi ama tüm ekranı kaplar, aşağı çekerek kapanmaz.
 // Kapatmanın tek yolu senin koyduğun buton -> oyun/sonuç ekranları için ideal.
+// NEREDE KULLANILIR? Onboarding, tam ekran resim/video, kamera, oyun sonucu gibi kullanıcının dikkatini tamamen istediğin yerlerde.
 struct TamEkranGecis: View {
     @State private var acik = false
 

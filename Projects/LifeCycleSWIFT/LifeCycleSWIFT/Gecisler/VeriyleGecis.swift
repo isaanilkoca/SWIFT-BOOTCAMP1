@@ -1,6 +1,7 @@
 import SwiftUI
 
 // 6) VERİ TAŞIYARAK GEÇİŞ: hedef sayfanın init'ine değer verilir.
+// NEREDE KULLANILIR? Listeden seçilen öğenin detay sayfası, formdan girilen bilginin sonraki sayfada gösterilmesi.
 struct VeriyleGecis: View {
     @State private var isim = ""
 

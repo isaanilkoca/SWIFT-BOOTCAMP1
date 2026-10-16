@@ -2,6 +2,7 @@ import SwiftUI
 
 // 2) ŞARTLI GEÇİŞ: kod karar verir. Sayaç 5 olunca geçer.
 // @State = değişince ekran yenilenir. isPresented bool'u true olunca sayfa açılır.
+// NEREDE KULLANILIR? Oyun bitince sonuç ekranı, form tamamlanınca onay sayfası gibi bir koşula bağlı geçişlerde.
 struct SartliGecis: View {
     @State private var sayac = 0
     @State private var gec = false

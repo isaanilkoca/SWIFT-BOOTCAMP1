@@ -2,6 +2,7 @@ import SwiftUI
 
 // 4) SHEET: alttan açılan pencere (push değil, üstüne biner).
 // Kapatmak için sayfa içinde @Environment(\.dismiss) kullanılır.
+// NEREDE KULLANILIR? Ekle/düzenle formları, filtre seçimi, paylaşım ekranı gibi ana akışı bozmayan kısa işlemlerde.
 struct SheetGecis: View {
     @State private var sheetAcik = false
 

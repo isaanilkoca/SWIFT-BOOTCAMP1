@@ -1,6 +1,7 @@
 import SwiftUI
 
 // 3) Şartlı geçişe ikinci örnek: şifre doğruysa geç, yanlışsa hata yaz.
+// NEREDE KULLANILIR? Giriş (login) ekranları, PIN/şifre doğrulama, doğrulama başarılıysa ana sayfaya geçiş.
 struct SifreGecis: View {
     @State private var sifre = ""
     @State private var gec = false
